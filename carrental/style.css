@@ -107,9 +107,14 @@ body {
     padding: 0.5em 1em;
     border: none;
     border-radius: 0.5em;
-    background-color: #ff5722;
+    background-color: #3A9AFF;
     color: white;
     cursor: pointer;
+}
+
+.form-container button:hover{
+    background-color: #2845D6;
+    transition: 0.2px ease;
 }
 
 .car-list {
