@@ -117,19 +117,18 @@ body {
     transition: 0.2px ease;
 }
 
-.car-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    gap: 1.5em;
-    align-content: center;
-    padding: 2em 1em;
-    align-items: start;
-    max-width: 80rem;
-    margin: 0 auto;
+.car-list-container{
+    background-color: #3A9AFF;
 }
 
-.car-list h2 {
-    font-size: 2em;
+.car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.car-list-header h2 {
+    font-size: 3em;
     margin: 2em 0;
     grid-column: 1 / -1;
     text-align: center;
@@ -137,14 +136,35 @@ body {
 
 .car-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: min(22rem, 100%);
+    width: 30%;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .car-item img {
     width: 100%;
-    height: auto;
+    height: 250px;
     object-fit: cover;
+    display: block;
+}
+
+.car-info{
+    padding: 0px 20px;
+}
+
+.car-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #2845D6;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.btn-rent{
+    padding: 8px 20px;
+    border-radius: 10px;
 }
