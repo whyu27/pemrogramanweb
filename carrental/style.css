@@ -208,6 +208,7 @@ body {
 .about-container{
     background-color: black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px 30px;
 }
 
 .about-header h2{
@@ -217,17 +218,44 @@ body {
     text-align: center;
 }
 
+.about-flex{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    margin: 0 20px;
+}
+
 .about-text{
     color: white;
+    width: 40%;
+    padding: 20px 0;
+    /* background-color: #2845D6; */
 }
 
 .about-text h3{
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: 600;
+    margin-top: 0;
+    /* border-bottom: 2px solid rgb(128, 128, 128, 0.5); */
+    padding-bottom: 7px;
 }
 
 .about-text p{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: grey;
     line-height: 1.5;
+}
+
+.about-img{
+    width: 40%;
+    /* background-color: #3A9AFF; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.about-img img{
+    border-radius: 20px;
+    width: 100%;
 }
