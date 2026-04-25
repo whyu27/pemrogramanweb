@@ -218,5 +218,16 @@ body {
 }
 
 .about-text{
+    color: white;
+}
 
+.about-text h3{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.about-text p{
+    font-size: 0.8rem;
+    color: grey;
+    line-height: 1.5;
 }
