@@ -229,15 +229,11 @@ body {
     color: white;
     width: 40%;
     padding: 20px 0;
-    /* background-color: #2845D6; */
 }
 
 .about-text h3{
     font-size: 1.8rem;
     font-weight: 600;
-    margin-top: 0;
-    /* border-bottom: 2px solid rgb(128, 128, 128, 0.5); */
-    padding-bottom: 7px;
 }
 
 .about-text p{
@@ -248,14 +244,49 @@ body {
 
 .about-img{
     width: 40%;
-    /* background-color: #3A9AFF; */
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 50px 0;
+    padding-top: 40px;
 }
 
 .about-img img{
     border-radius: 20px;
     width: 100%;
+}
+
+.about-highlights{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.highlight{
+    background-color: #0a0a0c;
+    border: 1px solid #2a2a35;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    transition: 0.3S ease;
+}
+
+.highlight:hover{
+    border-color:  rgb(83, 99, 122);
+}
+
+.hl-icon{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.highlight strong {
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.highlight p {
+    font-size: 0.9rem;
+    margin: 0;
 }
