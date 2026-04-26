@@ -276,6 +276,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 15px;
+    gap: 10px;
     transition: 0.3S ease;
 }
 
@@ -284,8 +285,7 @@ body {
 }
 
 .hl-icon{
-    font-size: 1.5rem;
-    padding: 10px;
+    font-size: 1.3rem;
 }
 
 .highlight strong {
