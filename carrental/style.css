@@ -1,3 +1,16 @@
+:root{
+    --bg-dark: #0a0a0c;
+    --bg-card: #111116;
+    --border: #2a2a35;
+    --accent: #457b9d;
+    --border-hover : rgb(69, 123, 157, 0.5);
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-dark);
+}
+
 nav{
     position: fixed;
     display: flex;
@@ -21,6 +34,10 @@ nav{
     font-weight: bold;
     color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-logo .logo-accent{
+    color: var(--accent);
 }
 
 nav ul{
@@ -55,10 +72,6 @@ nav ul li a:hover{
     flex-direction: column;
 }
 
-body {
-    margin: 0;
-    background-color: #0a0a0c;
-}
 
 .title {
     color: white;
@@ -145,16 +158,16 @@ body {
     display: flex;
     flex-direction: column;
     width: 30%;
-    border: 1px solid #2a2a35;
+    border: 1px solid var(--border);
     margin-bottom: 30px;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #111116;
-    transition: 0.2s ease;
+    background-color: var(--bg-card);
+    transition: 0.3s ease;
 }
 
 .car-item:hover{
-    border: 1.2px solid rgb(83, 99, 122, 0.7);
+    border: 1px solid var(--border-hover);
 }
 
 .car-item img {
@@ -187,7 +200,7 @@ body {
     padding: 10px 20px;
     box-sizing: border-box;
     font-weight: 600;
-    border-top: 1px solid #2a2a35;
+    border-top: 1px solid var(--border);
 }
 
 .btn-rent{
@@ -195,23 +208,23 @@ body {
     width: 100px;
     border-radius: 10px;
     background: transparent;
-    border: 2px solid rgb(83, 99, 122);
-    color: rgb(83, 99, 122);
+    border: 2px solid var(--accent);
+    color: var(--accent);
     font-size: 0.9rem;
     font-weight: 700;
     letter-spacing: 0.01rem;
 }
 
 .btn-rent:hover{
-    background-color: rgb(83, 99, 122);
+    background-color: var(--accent);
     transition: 0.2s ease;
     color: white;
-    box-shadow: 0 0 5px rgb(92, 107, 131)
+    box-shadow: 0 0 5px var(--accent);
 }
 
 .about-container{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-top: 1px solid #2a2a35;
+    border-top: 1px solid var(--border);
     margin: 0 30px;
     padding: 100px;
 }
@@ -269,8 +282,8 @@ body {
 }
 
 .highlight{
-    background-color: #0a0a0c;
-    border: 1px solid #2a2a35;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
     border-radius: 10px;
     padding: 15px;
     display: flex;
@@ -281,7 +294,7 @@ body {
 }
 
 .highlight:hover{
-    border-color:  rgb(83, 99, 122, 0.7);
+    border-color:  var(--border-hover);
 }
 
 .hl-icon{
@@ -301,7 +314,7 @@ body {
 .faq-container{
     background: linear-gradient(180deg, #0a0a0c 0%, #0e0e14 100%);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-top: 1px solid #2a2a35;
+    border-top: 1px solid var(--border);
     padding: 100px;
     margin: 0 auto;
 }
@@ -327,8 +340,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #2a2a35;
-    background-color: #111116;
+    border: 1px solid var(--border);
+    background-color: var(--bg-card);
     margin: 10px 0;
     border-radius: 10px;
     padding: 10px 20px;
@@ -342,14 +355,14 @@ body {
 }
 
 .faq-item p:hover{
-    color: gray;
+    color: var(--accent);
 }
 
 .faq-item span{
     margin-right: 5px;
     font-size: 1rem;
     font-weight: bold;
-    color: gray;
+    color: var(--accent);
 }
 
 .contact-container{
@@ -384,8 +397,8 @@ body {
 }
 
 .contact-item{
-    background-color: #111116;
-    border: 1px solid #2a2a35;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
     border-radius: 10px;
     padding: 30px;
     display: flex;
@@ -395,10 +408,14 @@ body {
     margin-bottom: 10px;
 }
 
+.contact-item:hover{
+    border-color: var(--border-hover);
+}
+
 .contact-form{
-    background-color: #111116;
+    background-color: var(--bg-card);
     width: 40%;
-    border: 1px solid #2a2a35;
+    border: 1px solid var(--border);
     border-radius: 10px;
 }
 
@@ -445,7 +462,7 @@ body {
 .contact-form-item input,
 .contact-form-item textarea {
     background: rgba(255,255,255,0.04);
-    border: 1px solid #2a2a35;
+    border: 1px solid var(--border);
     border-radius: 8px;
     font-size: 1rem;
     color: gray;
@@ -461,8 +478,13 @@ body {
     font-weight: bold;
     padding: 20px;
     margin-top: 15px;
-    background-color: rgb(83, 99, 122, 0.7);
+    background-color: var(--accent);
     color: white;
+    transition: 0.3s ease;
+}
+
+.cf-btn:hover{
+   background-color: var(--border-hover);
 }
 
 footer{
@@ -472,6 +494,6 @@ footer{
     color: rgb(255, 255, 255);
     background: linear-gradient(180deg, #0a0a0c 0%, #0e0e14 100%);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-top: 1px solid #2a2a35;
+    border-top: 1px solid var(--border);
     padding: 10px 30px;
 }
