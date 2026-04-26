@@ -387,12 +387,12 @@ body {
     background-color: #111116;
     border: 1px solid #2a2a35;
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     display: flex;
     align-items: center;
-    margin-top: 15px;
     gap: 10px;
     transition: 0.3S ease;
+    margin-bottom: 10px;
 }
 
 .contact-form{
@@ -416,4 +416,51 @@ body {
     margin: 0;
     padding-top: 10px;
     color: gray;
+}
+
+.contact-form{
+    padding: 40px;
+}
+
+.contact-form h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.contact-form-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.contact-form-item label{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.contact-form-item input,
+.contact-form-item textarea {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid #2a2a35;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: gray;
+    padding: 20px 25px;
+    outline: none;
+}
+
+.cf-btn{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 15px;
+    background-color: rgb(83, 99, 122, 0.7);
+    color: white;
 }
