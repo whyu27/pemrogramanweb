@@ -464,3 +464,14 @@ body {
     background-color: rgb(83, 99, 122, 0.7);
     color: white;
 }
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(180deg, #0a0a0c 0%, #0e0e14 100%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-top: 1px solid #2a2a35;
+    padding: 10px 30px;
+}
