@@ -351,3 +351,69 @@ body {
     font-weight: bold;
     color: gray;
 }
+
+.contact-container{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-top: 1px solid #2a2a35;
+    padding: 100px;
+    color: white;
+}
+
+.contact-header{
+    padding-bottom: 20px;
+}
+
+.contact-header h2{
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.contact-flex{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    margin: 0 20px
+}
+
+.contact-list{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item{
+    background-color: #111116;
+    border: 1px solid #2a2a35;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+    transition: 0.3S ease;
+}
+
+.contact-form{
+    background-color: #111116;
+    width: 40%;
+    border: 1px solid #2a2a35;
+    border-radius: 10px;
+}
+
+.contact-item span{
+    font-size: 1.3rem;
+}
+
+.contact-item strong {
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 0.9rem;
+    margin: 0;
+    padding-top: 10px;
+    color: gray;
+}
