@@ -133,7 +133,7 @@ body {
 }
 
 .car-list-header{
-    margin-bottom: 60px;
+    padding-bottom: 20px;
 }
 
 .car-list-header h2 {
@@ -218,11 +218,14 @@ body {
     padding: 100px;
 }
 
+.about-header{
+    padding-bottom: 20px;
+}
+
 .about-header h2{
     color: white;
     font-size: 2.5em;
     text-align: center;
-    margin-top: 0;
 }
 
 .about-flex{
@@ -235,7 +238,6 @@ body {
 .about-text{
     color: white;
     width: 40%;
-    padding: 20px 0;
 }
 
 .about-text h3{
@@ -296,4 +298,58 @@ body {
     font-size: 0.9rem;
     margin: 0;
     padding-top: 5px;
+}
+
+.faq-container{
+    background: linear-gradient(180deg, #0a0a0c 0%, #0e0e14 100%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-top: 1px solid #2a2a35;
+    padding: 100px;
+    margin: 0 auto;
+}
+
+.faq-header{
+    padding-bottom: 20px;
+}
+
+.faq-header h2{
+    color: white;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.faq-list{
+    display: block;
+    color: white;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #2a2a35;
+    background-color: #111116;
+    margin: 10px 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.faq-item p{
+    font-size: 1rem;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.faq-item p:hover{
+    color: gray;
+}
+
+.faq-item span{
+    margin-right: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: gray;
 }
