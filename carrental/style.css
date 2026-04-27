@@ -540,3 +540,40 @@ footer{
     color: white;
 }
 
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.footer-link{
+    display: flex;
+    gap: 50px;
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-col strong{
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.footer-col a{
+    color: gray;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.footer-col a:hover{
+    color: var(--accent);
+}
+
