@@ -535,12 +535,8 @@ nav ul li a:hover{
 }
 
 footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: rgb(255, 255, 255);
     background: linear-gradient(180deg, #0a0a0c 0%, #0e0e14 100%);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-top: 1px solid var(--border);
-    padding: 10px 30px;
+    color: white;
 }
+
