@@ -9,6 +9,10 @@
     --font-mono:    'Share Tech Mono', monospace;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: var(--bg-dark);
