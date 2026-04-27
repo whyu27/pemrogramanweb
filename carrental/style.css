@@ -546,7 +546,9 @@ footer{
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border);
 }
 
 .footer-link{
@@ -582,6 +584,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .footer-logo span{
@@ -592,4 +595,18 @@ footer{
 
 .footer-logo .logo-accent{
     color: var(--accent);
+}
+
+.footer-logo p{
+    color: gray;
+}
+
+.footer-bottom{
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
 }
