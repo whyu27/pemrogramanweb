@@ -226,6 +226,24 @@ nav ul li a:hover{
     line-height: 1.5;
 }
 
+.car-specs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 20px 20px 20px;
+    gap: 10px;
+}
+
+.spec{
+    display: flex;
+    align-items: center;
+    padding: 7px 10px;
+    border: 1px solid var(--border);
+    background-color: rgba(255,255,255,0.03);
+    color: gray;
+    border-radius: 5px;
+    gap: 10px;
+}
+
 .car-footer{
     display: flex;
     justify-content: space-between;
