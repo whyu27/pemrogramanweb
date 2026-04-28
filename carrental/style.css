@@ -395,9 +395,7 @@ nav ul li a:hover{
 }
 
 .faq-item{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
     border: 1px solid var(--border);
     background-color: var(--bg-card);
     font-family: var(--font-body);
@@ -407,23 +405,39 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
-.faq-item p{
+
+.faq-question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question p{
     font-size: 1rem;
-    color: white;
     font-weight: 600;
     margin: 0;
-    transition: 0.2s ease;
 }
 
-.faq-item p:hover{
-    color: var(--accent);
-}
-
-.faq-item span{
+.faq-question span{
     margin-right: 3px;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: 600;
     color: var(--accent);
+}
+
+.faq-item:hover .faq-question{
+    color: var(--accent);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    color: gray;
+    transition: max-height 0.7s ease;
+}
+
+.faq-item:hover .faq-answer {
+    max-height: 200px;
 }
 
 .contact-container{
