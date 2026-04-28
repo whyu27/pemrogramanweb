@@ -80,6 +80,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-bottom: 1px solid var(--border);
 }
 
 
@@ -167,6 +168,7 @@ nav ul li a:hover{
     max-width: 100%;
     background: linear-gradient(180deg, #0a0a0c 0%, #0e0e14 100%);
     padding: 100px;
+    border-bottom: 1px solid var(--border);
 }
 
 .car-list {
@@ -179,13 +181,28 @@ nav ul li a:hover{
 .car-list-header{
     padding-bottom: 20px;
     font-family: var(--font-display);
+    text-align: center;
+}
+
+.car-list-header span {
+    display: inline-block;
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    padding: 5px 14px;
+    background-color: rgb(69, 123, 157, 0.2);
+    letter-spacing: 0.1em;
+    font-weight: bold;
 }
 
 .car-list-header h2 {
     color: white;
-    text-align: center;
     font-size: 3.5rem;
     letter-spacing: 0.03em;
+    margin-top: 20px;
 }
 
 .car-item {
@@ -276,7 +293,6 @@ nav ul li a:hover{
 }
 
 .about-container{
-    border-top: 1px solid var(--border);
     margin: 0 30px;
     padding: 100px;
 }
@@ -284,13 +300,28 @@ nav ul li a:hover{
 .about-header{
     font-family: var(--font-display);
     padding-bottom: 20px;
+    text-align: center;
+}
+
+.about-header span{
+    display: inline-block;
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    padding: 5px 14px;
+    background-color: rgb(69, 123, 157, 0.2);
+    letter-spacing: 0.1em;
+    font-weight: bold;
 }
 
 .about-header h2{
     color: white;
-    text-align: center;
     font-size: 3.5rem;
     letter-spacing: 0.03em;
+    margin-top: 20px;
 }
 
 .about-flex{
@@ -378,13 +409,27 @@ nav ul li a:hover{
 .faq-header{
     font-family: var(--font-display);
     padding-bottom: 20px;
+    text-align: center;
+}
+
+.faq-header span{
+    display: inline-block;
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    padding: 5px 14px;
+    background-color: rgb(69, 123, 157, 0.2);
+    letter-spacing: 0.1em;
+    font-weight: bold;
 }
 
 .faq-header h2{
     color: white;
     font-size: 3.5rem;
-    letter-spacing: 0.03em;
-    text-align: center;
+    margin-top: 20px;
 }
 
 .faq-list{
@@ -450,13 +495,28 @@ nav ul li a:hover{
 .contact-header{
     font-family: var(--font-display);
     padding-bottom: 20px;
+    text-align: center;
+}
+
+.contact-header span{
+    display: inline-block;
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    padding: 5px 14px;
+    background-color: rgb(69, 123, 157, 0.2);
+    letter-spacing: 0.1em;
+    font-weight: bold;
 }
 
 .contact-header h2{
     color: white;
     font-size: 3.5rem;
     letter-spacing: 0.03em;
-    text-align: center;
+    margin-top: 20px;
 }
 
 .contact-flex{
