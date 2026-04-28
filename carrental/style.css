@@ -214,11 +214,13 @@ nav ul li a:hover{
     border-radius: 10px;
     overflow: hidden;
     background-color: var(--bg-card);
-    transition: 0.3s ease;
+    cursor: pointer;
+    transition: border-color 0.3s ease, transform 0.3s ease;
 }
 
 .car-item:hover{
-    border: 1px solid var(--border-hover);
+    border-color: var(--border-hover);
+    transform: translateY(-7px);
 }
 
 .car-item img {
@@ -226,6 +228,12 @@ nav ul li a:hover{
     height: 250px;
     object-fit: cover;
     display: block;
+    transition: transform 0.5s ease, filter 0.3s ease;
+}
+
+.car-item:hover img {
+    transform: scale(1.04); 
+    filter: brightness(0.7);
 }
 
 .car-info{
@@ -378,7 +386,7 @@ nav ul li a:hover{
     align-items: center;
     margin-top: 15px;
     gap: 10px;
-    transition: 0.3S ease;
+    transition: border-color 0.3s ease;
 }
 
 .highlight:hover{
@@ -602,7 +610,7 @@ nav ul li a:hover{
 }
 
 .contact-form-item input,
-.contact-form-item textarea {
+.contact-form-item textarea{
     font-family: var(--font-body);
     background: rgba(255,255,255,0.04);
     border: 1px solid var(--border);
@@ -611,6 +619,12 @@ nav ul li a:hover{
     color: gray;
     padding: 15px 20px;
     outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form-item input:focus,
+.contact-form-item textarea:focus{
+    border-color: var(--accent);
 }
 
 .cf-btn{
@@ -624,7 +638,7 @@ nav ul li a:hover{
     margin-top: 15px;
     background-color: var(--accent);
     color: white;
-    transition: 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .cf-btn:hover{
