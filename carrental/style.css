@@ -363,7 +363,6 @@ nav ul li a:hover{
     display: flex;
     justify-content: end;
     align-items: center;
-    padding-top: 40px;
 }
 
 .about-img img{
@@ -384,7 +383,7 @@ nav ul li a:hover{
     padding: 15px;
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 7px;
     gap: 10px;
     transition: border-color 0.3s ease;
 }
