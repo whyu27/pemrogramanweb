@@ -258,7 +258,8 @@ nav ul li a:hover{
     background-color: rgba(255,255,255,0.03);
     color: gray;
     border-radius: 5px;
-    gap: 10px;
+    gap: 7px;
+    font-size: 0.7rem;
 }
 
 .car-footer{
