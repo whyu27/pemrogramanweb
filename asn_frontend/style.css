@@ -1,3 +1,18 @@
+:root{
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body:    'Rajdhani', sans-serif;
+    --font-mono:    'Share Tech Mono', monospace;
+    --accent: rgb(12, 142, 16);
+    --bg-white: white;
+    --bg-card: #F5F5F5 ;
+    --border: rgb(16, 110, 20);
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 nav{
     position: fixed;
     display: flex;
@@ -22,7 +37,7 @@ nav{
     font-weight: bold;
     color: white;
     font-family: var(--font-display);
-    letter-spacing: 0.07em;
+    letter-spacing: 0.05em;
 }
 
 .nav-logo .logo-accent{
@@ -71,7 +86,7 @@ nav ul li a:hover{
 
 .title h1 {
     font-family: var(--font-display);
-    font-size: 6em;
+    font-size: 4em;
     margin: 0;
 }
 
@@ -133,13 +148,375 @@ nav ul li a:hover{
     font-family: var(--font-display);
     border: none;
     border-radius: 0.5em;
-    background-color: #3A9AFF;
+    background-color: var(--accent);
     color: white;
     cursor: pointer;
     letter-spacing: 0.1rem;
 }
 
 .form-container button:hover{
-    background-color: #2845D6;
+    background-color: rgb(3, 102, 7);
     transition: 0.2px ease;
+}
+
+.plants-container{
+    max-width: 100%;
+    background-color: white;
+    padding: 100px;
+    border-bottom: 1px solid var(--border);
+}
+
+.plants-header{
+    padding-bottom: 20px;
+    font-family: var(--font-display);
+    text-align: center;
+}
+
+.plants-header h2 {
+    font-size: 3.5rem;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+}
+
+.plants-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.plant-item {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 1px solid var(--border);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--bg-card);
+    cursor: pointer;
+}
+
+.plant-info h3{
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.plant-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-top: 1px solid var(--border);
+}
+
+.plant-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-top: 1px solid var(--border);
+}
+
+.btn-buy{
+    height: 40px;
+    width: 90px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.01rem;
+}
+
+.btn-buy:hover{
+    background-color: var(--accent);
+    transition: 0.2s ease;
+    color: white;
+    box-shadow: 0 0 5px var(--accent);
+}
+
+.about-container{
+    margin: 0 30px;
+    padding: 100px;
+}
+
+.about-header{
+    font-family: var(--font-display);
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.about-header h2{
+    font-size: 3.5rem;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+}
+
+.about-flex{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    margin: 0 20px;
+}
+
+.about-text{
+    width: 40%;
+}
+
+.about-text h3{
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    letter-spacing: 0.03em;
+    font-weight: 600;
+}
+
+.about-text p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.about-highlights{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.highlight{
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+    gap: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.hl-icon{
+    font-size: 1.3rem;
+}
+
+.highlight strong {
+    font-size: 1rem;
+}
+
+.highlight p {
+    font-size: 0.9rem;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.contact-container{
+    font-family: var(--font-body);
+    border-top: 1px solid #2a2a35;
+    padding: 100px;
+}
+
+.contact-header{
+    font-family: var(--font-display);
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.contact-header h2{
+    font-size: 3.5rem;
+    letter-spacing: 0.03em;
+    margin-top: 20px;
+}
+
+.contact-flex{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    margin: 0 20px
+}
+
+.contact-list{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item{
+    background-color: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3S ease;
+    margin-bottom: 10px;
+}
+
+.contact-item:hover{
+    transform: translateY(-7px);
+}
+
+.contact-form{
+    background-color: var(--bg-card);
+    width: 40%;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.contact-item span{
+    font-size: 1.3rem;
+}
+
+.contact-item strong {
+    font-size: 1rem;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.contact-item p {
+    font-size: 0.9rem;
+    margin: 0;
+    padding-top: 10px;
+    color: gray;
+}
+
+.contact-form{
+    padding: 40px;
+}
+
+.contact-form h3{
+    font-size: 1.8rem;
+    font-family: var(--font-display);
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+.contact-form-item{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.contact-form-item label{
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.contact-form-item input,
+.contact-form-item textarea{
+    font-family: var(--font-body);
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: gray;
+    padding: 15px 20px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.cf-btn{
+    font-family: var(--font-display);
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: var(--accent);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.cf-btn:hover{
+    background-color: rgb(2, 90, 2);
+}
+
+footer{
+    background-color: white;
+    border-top: 1px solid var(--border);
+}
+
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border);
+}
+
+.footer-link{
+    display: flex;
+    gap: 50px;
+}
+
+.footer-col{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-col strong{
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.footer-col a{
+    color: gray;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.footer-col a:hover{
+    color: var(--accent);
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-logo span{
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    letter-spacing: 0.05em;
+}
+
+.footer-logo .logo-accent{
+    color: var(--accent);
+}
+
+.footer-logo p{
+    color: gray;
+}
+
+.footer-bottom{
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
 }
