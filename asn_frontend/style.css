@@ -5,7 +5,8 @@
     --accent: rgb(12, 142, 16);
     --bg-white: white;
     --bg-card: #F5F5F5 ;
-    --border: rgb(16, 110, 20);
+    --border: rgb(1, 155, 9);
+    --border-hover: rgb(2, 86, 6);
     
 }
 
@@ -188,12 +189,17 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     width: 30%;
-    border: 1px solid var(--border);
+    border: 2px solid var(--border);
     margin-bottom: 30px;
     border-radius: 10px;
     overflow: hidden;
     background-color: var(--bg-card);
     cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.plant-item:hover{
+    border-color: var(--border-hover);
 }
 
 .plant-info h3{
@@ -300,6 +306,10 @@ nav ul li a:hover{
     margin-top: 7px;
     gap: 10px;
     transition: border-color 0.3s ease;
+}
+
+.highlight:hover{
+    border-color:  var(--border-hover);
 }
 
 .hl-icon{
