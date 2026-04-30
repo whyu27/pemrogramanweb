@@ -1,7 +1,7 @@
 :root{
+    --font-mono:    'Share Tech Mono', monospace;
     --font-display: 'Bebas Neue', sans-serif;
     --font-body:    'Rajdhani', sans-serif;
-    --font-mono:    'Share Tech Mono', monospace;
     --accent: rgb(12, 142, 16);
     --bg-white: white;
     --bg-card: #F5F5F5 ;
@@ -332,7 +332,7 @@ nav ul li a:hover{
 
 .contact-container{
     font-family: var(--font-body);
-    border-top: 1px solid #2a2a35;
+    border-top: 1px solid var(--border);
     padding: 100px;
 }
 
