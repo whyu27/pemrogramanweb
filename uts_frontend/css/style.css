@@ -119,6 +119,13 @@ img {
     background: transparent;
 }
 
+.navbar.scrolled {
+    background: var(--bg-glass);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px 50px;
+}
+
 .logo {
     font-family: var(--font-primary);
     font-size: 1.8rem;
