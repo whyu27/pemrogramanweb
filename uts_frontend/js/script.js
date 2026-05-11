@@ -19,7 +19,7 @@ themeToggle.addEventListener('click', () => {
 const navbar = document.querySelector('.navbar');
         
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 50) {  
             navbar.classList.add('scrolled');
     }
     else {
@@ -121,3 +121,15 @@ const counterObserver = new IntersectionObserver(
 );
 
 counterObserver.observe(heroSection);
+
+// Generate particels
+const bgParticles = document.querySelector('.bg-particles');
+
+for (let i = 0; i < 50; i++) {
+    const particle = document.createElement('div');
+    particle.classList.add('particle');
+    particle.style.left = Math.random() * 100 + '%';
+    particle.style.animationDelay = Math.random() * 15 + 's';
+    particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+    bgParticles.appendChild(particle);
+}
