@@ -137,3 +137,52 @@ for (let i = 0; i < 50; i++) {
   particle.style.animationDuration = Math.random() * 10 + 10 + "s";
   bgParticles.appendChild(particle);
 }
+
+
+// Marquee Partners
+function initMarquee() {
+    const track = document.getElementById('marqueeTrack');
+    if (!track) return;
+
+    const items = Array.from(track.children);
+    const totalWidth = track.scrollWidth;
+    const screenWidth = window.innerWidth;
+    const clonesNeeded = Math.ceil((screenWidth * 2) / totalWidth) + 1;
+
+    for (let i = 0; i < clonesNeeded; i++) {
+        items.forEach(item => {
+            const clone = item.cloneNode(true);
+            track.appendChild(clone);
+        });
+    }
+
+    const singleSetWidth = totalWidth + 60;
+    let currentX = 0;
+    const speed = 0.8;
+    let isPaused = false;
+    let rafId;
+
+    track.addEventListener('mouseenter', () => isPaused = true);
+    track.addEventListener('mouseleave', () => isPaused = false);
+
+    function animate() {
+        if (!isPaused) {
+            currentX -= speed;
+
+            if (Math.abs(currentX) >= singleSetWidth) {
+                currentX = 0;
+            }
+
+            track.style.transform = `translateX(${currentX}px)`;
+        }
+
+        rafId = requestAnimationFrame(animate);
+    }
+
+    animate();
+}
+
+// Jalankan setelah preloader selesai
+window.addEventListener('load', () => {
+    setTimeout(initMarquee, 1600);
+});
