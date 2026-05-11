@@ -69,3 +69,55 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+
+// Counter Animation
+const counters = document.querySelectorAll(".stat-number");
+
+let countersAnimated = false;
+
+const animateCounters = () => {
+    if (countersAnimated) return;
+
+    counters.forEach((counter) => {
+        const target = parseInt(counter.getAttribute("data-count"));
+        const suffix = counter.textContent.replace(/[0-9]/g, "");
+
+        let current = 0;
+
+        const increment = target / 50;
+        const duration = 50;
+
+        const updateCounter = () => {
+            current += increment;
+
+            if (current < target) {
+                counter.textContent = Math.floor(current) + suffix;
+
+                setTimeout(updateCounter, duration);
+            } else {
+                counter.textContent = target + suffix;
+            }
+        };
+
+        updateCounter();
+    });
+
+    countersAnimated = true;
+};
+
+// Trigger counter animation when hero section is visible
+const heroSection = document.querySelector(".hero");
+
+const counterObserver = new IntersectionObserver(
+    (entries) => {
+        if (entries[0].isIntersecting) {
+            setTimeout(animateCounters, 500);
+        }
+    },
+    {
+        threshold: 0.5,
+    }
+);
+
+counterObserver.observe(heroSection);
