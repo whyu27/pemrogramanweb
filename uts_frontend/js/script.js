@@ -1,5 +1,4 @@
 // Preload
-// ============ PRELOADER ============
 window.addEventListener("load", () => {
     setTimeout(() => {
         document.querySelector(".preloader").classList.add("hidden");
